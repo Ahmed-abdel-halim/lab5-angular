@@ -1,0 +1,27 @@
+
+.imges img{
+  background-color: whitesmoke;
+  object-fit: cover;
+  width: 80%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
+  display: block;
+
+}
+
+.container{
+  margin-top: 30px;
+  height:200px;
+}
+.box{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+padding: 30px;
+height: 100%;
+}
+#stock{
+  width: 24%;
+border-radius: 50px;
+padding: 5px;
+
+}

@@ -1,0 +1,12 @@
+.box{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.container{
+  width: 1000px;
+}
+.card-2{
+  width: 900px;
+}

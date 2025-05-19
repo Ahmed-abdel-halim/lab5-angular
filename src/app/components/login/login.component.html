@@ -1,0 +1,17 @@
+<div class="login-form">
+    <form action="index.html" onsubmit="return validateLogin(event)">
+        <h3>User Login</h3>
+        <div class="inputBox">
+            <span class="fas fa-envelope"></span>
+            <input type="email" name="email" placeholder="Enter your email" id="email"/>
+        </div>
+        <div id="emailError" class="error"></div>
+        <div class="inputBox">
+            <span class="fas fa-lock"></span>
+            <input type="password" name="password" placeholder="Enter your password" id="password"/>
+        </div>
+        <div id="passwordError" class="error"></div>
+        <input type="submit" value="Sign In" class="btn"/>
+        <a href="register.html" class="btn">Create an Account</a>
+    </form>
+</div>

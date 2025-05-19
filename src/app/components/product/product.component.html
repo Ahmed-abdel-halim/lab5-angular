@@ -1,0 +1,42 @@
+<div class="product-card card p-3 d-flex flex-column justify-content-between">
+  <img
+    [src]="product.thumbnail"
+    alt="Product Image"
+    class="card-img-top mb-2"
+  />
+  <p [class]="stockClass" id="stock">{{ stockStatus }}</p>
+
+  <div class="card-body">
+    <h5 class="card-title text-black">{{ product.title }}</h5>
+    <p class="card-text text-black">{{ product.price | currency : "EGP" }}</p>
+
+    <div class="rating mb-2">
+      @for (star of [1, 2, 3, 4, 5]; track star) {
+        <i
+          class="bi"
+          [ngClass]="{
+            'bi-star-fill': star <= Math.round(product.rating),
+            'bi-star': star > Math.round(product.rating)
+          }">
+        </i>
+      }
+      {{ product.rating }}
+    </div>
+  </div>
+
+  <div class="btn-group  mt-auto " role="group">
+    <button
+      [ngClass]="product.stock > 0 ? 'btn-success' : 'btn-danger'"
+      class="btn w-100"
+      [disabled]="product.stock === 0"
+      (click)="addToCartFromHome(product)">
+      add to cart
+    </button>
+
+    <a [routerLink]="['/showdetails', product.id]" class="w-100">
+      <button class="btn w-100 bg-success-subtle mt-1">
+        showDetails
+      </button>
+    </a>
+  </div>
+</div>

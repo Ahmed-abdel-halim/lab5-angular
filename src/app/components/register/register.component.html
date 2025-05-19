@@ -1,0 +1,39 @@
+<section class="register-form">
+    <form action="" onsubmit="return validateRegister(event)">
+        <h3>Register Now</h3>
+        <div class="inputBox">
+            <span class="fas fa-user"></span>
+            <input type="text" name="name" placeholder="Enter your name" id="name" />
+        </div>
+        <div id="nameError" class="error"></div>
+        <div class="inputBox">
+            <span class="fas fa-user"></span>
+            <input type="text" name="username" placeholder="Enter User name" id="username" />
+        </div>
+        <div id="usernameError" class="error"></div>
+        <div class="inputBox">
+            <span class="fas fa-envelope"></span>
+            <input type="email" name="email" placeholder="Enter your email" id="email" />
+        </div>
+        <div id="emailError" class="error"></div>
+        <div class="inputBox">
+            <span class="fas fa-lock"></span>
+            <input type="password" name="password" placeholder="Enter your password" id="password" />
+        </div>
+        <div id="passwordError" class="error"></div>
+        <div class="inputBox">
+            <span class="fas fa-lock"></span>
+            <input type="password" name="confirmPassword" placeholder="Confirm your password" id="confirmPassword" />
+        </div>
+        <div id="confirmPasswordError" class="error"></div>
+        <div class="flex">
+            <input type="radio" name="check" value="Admin" id="admin" />
+            <label for="admin">Admin</label>
+            <input type="radio" name="check" value="User" checked id="User" />
+            <label for="User">User</label>
+        </div>
+        <div id="userTypeError" class="error"></div>
+        <input type="submit" value="Sign Up" class="btn" />
+        <a href="login.html" class="btn">Already have an account</a>
+    </form>
+</section>

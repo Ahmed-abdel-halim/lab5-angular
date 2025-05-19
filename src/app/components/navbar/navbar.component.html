@@ -1,0 +1,28 @@
+<header>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-logo-container">
+        <a href="index.html" class="navbar-logo">MyStore</a>
+        <div class="navbar-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <div class="navbar-links-container">
+          <h3><a routerLink="/home" routerLinkActive="activeLink"class="navbar-links">Home</a></h3>
+          <h3><a routerLink="/cart" routerLinkActive="activeLink" class="navbar-links">Cart</a></h3>
+          <h3><a routerLink="/about" routerLinkActive="activeLink" class="navbar-links">About</a></h3>
+          <h3><a routerLink="/contact" routerLinkActive="activeLink" class="navbar-links">Contact</a></h3>
+        </div>
+      </div>
+      <div class="navbar-auth">
+        <a routerLink="/login" routerLinkActive="activeLink" class="auth-button login">Login</a>
+        <a routerLink="/register" routerLinkActive="activeLink" class="auth-button signup">Signup</a>
+        <div class="navbar-cart">
+          <a routerLink="/cart"><i class="bi bi-cart-check"></i></a>
+          <span class="cart-count">{{ cartItemList?.length }}</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
